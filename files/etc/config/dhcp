@@ -11,11 +11,8 @@ config dnsmasq
 	option ednspacket_max '1232'
 	option port '53'
 	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
-	option cachesize '0'
 	option domainneeded '1'
 	option rebind_protection '0'
-	option noresolv '1'
-	list server '127.0.0.1#5335'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -59,4 +56,3 @@ config host
 	option mac '00:11:32:82:68:b7'
 	option ip '192.168.1.200'
 	option leasetime '12h'
-
