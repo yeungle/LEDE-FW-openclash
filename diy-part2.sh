@@ -25,6 +25,7 @@ rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/utils/v2dat
+rm -rf package/lean/luci-app-openclash
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/ddnsto package/ddnsto
