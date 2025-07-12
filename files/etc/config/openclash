@@ -1,7 +1,7 @@
 
 config config_subscribe
 	option enabled '1'
-	option name '泡泡dog'
+	option name 'paopaodog'
 	option address 'https://times1752216010.subxiandan.top:9604/v2b/paopaogou/api/v1/client/subscribe?token=ce3f5054803ab75eda912394c536da0d'
 	option emoji 'false'
 	option udp 'true'
