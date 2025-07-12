@@ -26,10 +26,6 @@ rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/utils/v2dat
 
-#git clone --depth=1 -b main https://github.com/fw876/helloworld.git package/helloworld
-
-#git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
-
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
 cp -rf kenzok8-packages/ddnsto package/ddnsto
 cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
@@ -45,7 +41,10 @@ cp -rf mosdns-packages/luci-app-mosdns package/luci-app-mosdns
 cp -rf mosdns-packages/v2dat package/v2dat
 rm -rf mosdns-packages
 
-#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+cp -rf openClash-packages/luci-app-openclash package/luci-app-openclash
+rm -rf openClash-packages
+
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 ./scripts/feeds update -a
