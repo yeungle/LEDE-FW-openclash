@@ -15,7 +15,7 @@ theme: auto
 dns:
   bind_hosts:
     - 0.0.0.0
-  port: 5553
+  port: 53
   anonymize_client_ip: false
   ratelimit: 0
   ratelimit_subnet_len_ipv4: 24
@@ -85,7 +85,7 @@ dns:
   bootstrap_prefer_ipv6: false
   upstream_timeout: 10s
   private_networks: []
-  use_private_ptr_resolvers: true
+  use_private_ptr_resolvers: false
   local_ptr_upstreams: []
   use_dns64: false
   dns64_prefixes: []
@@ -173,18 +173,18 @@ user_rules:
   - '@@||mini.eastday.com^$important'
 dhcp:
   enabled: false
-  interface_name: ""
+  interface_name: br-lan
   local_domain_name: lan
   dhcpv4:
-    gateway_ip: ""
-    subnet_mask: ""
-    range_start: ""
-    range_end: ""
+    gateway_ip: 192.168.1.1
+    subnet_mask: 255.255.255.0
+    range_start: 192.168.1.100
+    range_end: 192.168.1.250
     lease_duration: 86400
     icmp_timeout_msec: 1000
     options: []
   dhcpv6:
-    range_start: ""
+    range_start: 2001::1
     lease_duration: 86400
     ra_slaac_only: false
     ra_allow_slaac: false
