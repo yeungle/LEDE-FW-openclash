@@ -7,7 +7,7 @@
 proxy-providers:
 
   牛逼:
-    url: "机场订阅地址"
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=9a3b96564b3522463b01b3a283f50cc4"
     type: http
     interval: 86400
     health-check:
