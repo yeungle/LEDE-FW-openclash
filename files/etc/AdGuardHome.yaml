@@ -146,18 +146,18 @@ user_rules:
   - '@@||mini.eastday.com^$important'
 dhcp:
   enabled: false
-  interface_name: br-lan
+  interface_name: ""
   local_domain_name: lan
   dhcpv4:
-    gateway_ip: 192.168.1.1
-    subnet_mask: 255.255.255.0
-    range_start: 192.168.1.100
-    range_end: 192.168.1.250
+    gateway_ip: ""
+    subnet_mask: ""
+    range_start: ""
+    range_end: ""
     lease_duration: 86400
     icmp_timeout_msec: 1000
     options: []
   dhcpv6:
-    range_start: 2001::1
+    range_start: ""
     lease_duration: 86400
     ra_slaac_only: false
     ra_allow_slaac: false
