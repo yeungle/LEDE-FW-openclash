@@ -381,7 +381,7 @@ config subscribe_info
 	option url 'https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=9a3b96564b3522463b01b3a283f50cc4'
 
 config dns_servers
-	option enabled '1'
+	option enabled '0'
 	option group 'nameserver'
 	option interface 'Disable'
 	option direct_nameserver '1'
