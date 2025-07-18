@@ -1,5 +1,264 @@
 
 config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '211.139.29.150'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '211.139.29.170'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '222.172.200.68'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option group 'nameserver'
+	option type 'udp'
+	option ip '61.166.150.123'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option type 'https'
+	option ip 'doh.pub/dns-query'
+	option group 'nameserver'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option type 'https'
+	option ip 'dns.alidns.com/dns-query'
+	option group 'nameserver'
+	option enabled '0'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '9.9.9.9'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '149.112.112.112'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2620:fe::fe'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2620:fe::9'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'nameserver'
+	option ip '8.8.8.8'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'nameserver'
+	option ip '8.8.4.4'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:4860:4860::8888'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:4860:4860::8844'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '2001:da8::666'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.quad9.net'
+	option type 'tls'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.google'
+	option type 'tls'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'nameserver'
+	option ip '1.1.1.1'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiar.app'
+	option type 'tls'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dot.tiar.app'
+	option type 'tls'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.quad9.net/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.google/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.cloudflare.com/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '1.1.1.1/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'public.dns.iij.jp/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiar.app/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'jp.tiarap.org/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option type 'https'
+	option ip 'doh.dnslify.com/dns-query'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.twnic.tw/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'dns.oszx.co/dns-query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip 'doh.applied-privacy.net/query'
+	option type 'https'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '172.18.2.2'
+	option type 'tcp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '172.18.2.2'
+	option type 'udp'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option enabled '0'
+	option group 'fallback'
+	option ip '172.18.2.2'
+	option type 'tls'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option type 'tcp'
+	option ip '223.5.5.5'
+	option enabled '0'
+	option group 'default'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option type 'tcp'
+	option ip '119.29.29.29'
+	option enabled '0'
+	option group 'default'
+        option disable_ipv6 '0'
+
+config dns_servers
+	option type 'tcp'
+	option ip '114.114.114.114'
+	option enabled '0'
+	option group 'default'
+        option disable_ipv6 '0'
+
+config dns_servers
 	option enabled '0'
 	option group 'nameserver'
 	option interface 'Disable'
