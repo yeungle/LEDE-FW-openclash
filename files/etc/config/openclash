@@ -366,10 +366,10 @@ config openclash 'config'
 	option config_path '/etc/openclash/config/clash-all-fallback-smart.yaml'
 	option restart '0'
 	option enable '1'
-	option enable_redirect_dns '0'
+	option enable_redirect_dns '1'
 	option append_wan_dns '1'
-	option cachesize_dns '0'
-	option redirect_dns '0'
+	option cachesize_dns '1'
+	option redirect_dns '1'
 
 config authentication
 	option enabled '1'
