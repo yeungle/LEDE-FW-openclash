@@ -25,7 +25,17 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连     
-
+  
+  小黄鸭:
+    url: "https://cocoduck.live/sub/1b33ee1c2794c3b8/clash"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连     
+    
 proxies:
   - {name: 直连, type: direct}
   - {name: 拒绝, type: reject}
@@ -99,6 +109,8 @@ dns:
     - +.ppg01-8lnssk1c.top
     - +.paopaogou.cloud  
     - +.paopaogou.co
+# 小黄鸭   
+    - +.cocoduck.live
     
     - +.qeayr.cn
     - +.saojc.xyz   
