@@ -389,7 +389,4 @@ config authentication
 	option username 'Clash'
 	option password 'rpa8sIEY'
 
-config subscribe_info
-	option name 'niubi'
-	option url 'https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=9a3b96564b3522463b01b3a283f50cc4'
 
