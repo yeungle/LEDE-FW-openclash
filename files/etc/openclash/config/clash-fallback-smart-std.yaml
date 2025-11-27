@@ -6,8 +6,18 @@
 
 proxy-providers:
 
+  优速通:
+    url: "https://23.158.136.185/api/v1/client/subscribe?token=cb1f5308c036d705fae4cda77a5dc70c"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连  
+  
   猫耳云:
-    url: "https://m2dy.whtjdasha.com/api/v1/client/subscribe?token=f25e3beaac57225e91e77bd1b2e1222e1"
+    url: "https://m2dy.whtjdasha.com/api/v1/client/subscribe?token=f25e3beaac57225e91e77bd1b2e1222e"
     type: http
     interval: 86400
     health-check:
@@ -17,7 +27,7 @@ proxy-providers:
     proxy: 直连
 
   牛逼:
-    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=0e1f7cfe54b869fa5739cc9475d7a7751"
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=0e1f7cfe54b869fa5739cc9475d7a775"
     type: http
     interval: 86400
     health-check:
@@ -60,41 +70,40 @@ dns:
   fake-ip-range: 198.20.0.1/16
   nameserver:
     - 223.5.5.5
+  fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - +.lan
     - +.local
     - geosite:cn
 # 快猫    
-    - +.quickcht3.club
-    - +.kuaimao2.club
+    - +.km688.ink
 # 火烧 
     - +.onesubv.site
     - +.oneyyds.online
     - +.fengyyds.site
     - +.onemg.top    
 # 猫耳 
-    - +.zhunchuanpb.com
-    - +.sevenka.top
+    - +.chybinc.com
 # BestVPN 
-    - +.networklinkpro.net
-    - +.prosubnet02.eu
+    - +.invitevp.com
+    - +.vp2.us
 # 小牛
-    - +.4yfu73r3a4kl.com
     - +.xiaoniuyun.cc  
 # 硅谷
-    - +.huawei-cloud.shop
-    - +.huawei-cloud.vip
-    - +.gpt-agent.cc      
+    - +.apple-bing.sbs  
 # 无界
-    - +.acwct.cn
-    - +.472361.xyz
+    - +.bncrcloud.com
 # 冰云
-    - +.bingyun.ink   
-    - +.fafhjkah.xyz
+    - +.xby01.xyz
 # 牛逼   
-    - +.66jc.top  
-    - +.jueduibupao.top  
-    
+    - +.idsduf.com  
+    - +.66jc.top
+# 极速通        
+    - +.gfw.gg
+# 萌狗       
+    - +.moedog.cloud
+
+# 其他     
     - +.ynhtbank.com
     - +.qeayr.cn
     - +.saojc.xyz   
@@ -103,6 +112,7 @@ dns:
     - +.0tk8a3a1q4t94dler.com    
     - +.aerianas.top
     - +.gptacg.top
+    - +.wxda.net
 
 ipv6: false
 
@@ -464,5 +474,7 @@ rule-providers:
   anti-AD: { <<: *qcy, url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml?" }
   anti-AD-white: { <<: *qcy, url: "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml?" }
   fakeip-filter: {<<: *domain, url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"}
+
+
 
 
