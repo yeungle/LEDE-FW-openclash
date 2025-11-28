@@ -7,7 +7,7 @@
 proxy-providers:
 
   优速通:
-    url: "https://23.158.136.185/api/v1/client/subscribe?token=cb1f5308c036d705fae4cda77a5dc70c1"
+    url: "https://23.158.136.185/api/v1/client/subscribe?token=cb1f5308c036d705fae4cda77a5dc70c"
     type: http
     interval: 86400
     health-check:
@@ -17,7 +17,7 @@ proxy-providers:
     proxy: 直连  
   
   猫耳云:
-    url: "https://m2dy.whtjdasha.com/api/v1/client/subscribe?token=f25e3beaac57225e91e77bd1b2e1222e1"
+    url: "https://m2dy.whtjdasha.com/api/v1/client/subscribe?token=f25e3beaac57225e91e77bd1b2e1222e"
     type: http
     interval: 86400
     health-check:
@@ -27,7 +27,7 @@ proxy-providers:
     proxy: 直连
 
   牛逼:
-    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=0e1f7cfe54b869fa5739cc9475d7a7751"
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=0e1f7cfe54b869fa5739cc9475d7a775"
     type: http
     interval: 86400
     health-check:
