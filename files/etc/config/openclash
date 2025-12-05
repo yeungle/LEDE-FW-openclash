@@ -4,262 +4,261 @@ config dns_servers
 	option type 'udp'
 	option ip '211.139.29.150'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option group 'nameserver'
 	option type 'udp'
 	option ip '211.139.29.170'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option group 'nameserver'
 	option type 'udp'
 	option ip '222.172.200.68'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option group 'nameserver'
 	option type 'udp'
 	option ip '61.166.150.123'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option type 'https'
 	option ip 'doh.pub/dns-query'
 	option group 'nameserver'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option type 'https'
 	option ip 'dns.alidns.com/dns-query'
 	option group 'nameserver'
 	option enabled '0'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '9.9.9.9'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '149.112.112.112'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '2620:fe::fe'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '2620:fe::9'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'nameserver'
 	option ip '8.8.8.8'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'nameserver'
 	option ip '8.8.4.4'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '2001:4860:4860::8888'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '2001:4860:4860::8844'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '2001:da8::666'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.quad9.net'
 	option type 'tls'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.google'
 	option type 'tls'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'nameserver'
 	option ip '1.1.1.1'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'jp.tiar.app'
 	option type 'tls'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dot.tiar.app'
 	option type 'tls'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.quad9.net/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.google/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.cloudflare.com/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '1.1.1.1/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'public.dns.iij.jp/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'jp.tiar.app/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'jp.tiarap.org/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option type 'https'
 	option ip 'doh.dnslify.com/dns-query'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.twnic.tw/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'dns.oszx.co/dns-query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip 'doh.applied-privacy.net/query'
 	option type 'https'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '172.18.2.2'
 	option type 'tcp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '172.18.2.2'
 	option type 'udp'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option enabled '0'
 	option group 'fallback'
 	option ip '172.18.2.2'
 	option type 'tls'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option type 'tcp'
 	option ip '223.5.5.5'
 	option enabled '0'
 	option group 'default'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option type 'tcp'
 	option ip '119.29.29.29'
 	option enabled '0'
 	option group 'default'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
 	option type 'tcp'
 	option ip '114.114.114.114'
 	option enabled '0'
 	option group 'default'
-        option disable_ipv6 '0'
+	option disable_ipv6 '0'
 
 config dns_servers
-	option enabled '0'
 	option group 'nameserver'
 	option interface 'Disable'
 	option direct_nameserver '1'
@@ -269,6 +268,7 @@ config dns_servers
 	option specific_group 'DIRECT'
 	option ip '172.18.1.10'
 	option type 'udp'
+	option enabled '0'
 
 config openclash 'config'
 	option proxy_port '7892'
@@ -285,11 +285,8 @@ config openclash 'config'
 	option dashboard_forward_ssl '0'
 	option rule_source '0'
 	option enable_custom_dns '1'
-	option ipv6_enable '0'
-	option ipv6_dns '0'
 	option enable_custom_clash_rules '0'
 	option other_rule_auto_update '1'
-	option core_version 'linux-amd64'
 	option servers_if_update '0'
 	option servers_update '0'
 	option log_level '0'
@@ -353,9 +350,7 @@ config openclash 'config'
 	option disable_masq_cache '1'
 	option enable_custom_domain_dns_server '0'
 	option enable_unified_delay '1'
-	option geoip_custom_url 'https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat'
 	option create_config '0'
-	option append_wan_dns '1'
 	option auto_update_time '2'
 	option disable_quic_go_gso '0'
 	option other_rule_update_week_time '*'
@@ -369,24 +364,40 @@ config openclash 'config'
 	option geoasn_auto_update '1'
 	option geoasn_update_week_time '*'
 	option geoasn_update_day_time '2'
-	option geoasn_custom_url 'https://testingcf.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb'
 	option chnr_update_week_time '*'
 	option chnr_update_day_time '2'
-	option enable_redirect_dns '1'
 	option smart_enable '1'
 	option core_type 'Smart'
-	option restart '0'
-	option enable '1'
 	option dnsmasq_noresolv '0'
 	option dnsmasq_resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
-	option config_path '/etc/openclash/config/clash-all-fallback-smart.yaml'
-	option redirect_dns '1'
-	option dnsmasq_cachesize '0'
-	option cachesize_dns '1'
+	option core_version 'linux-amd64-v1'
+	option enable '1'
+	option config_path '/etc/openclash/config/clash-fallback-smart-std.yaml'
+	option smart_collect '0'
+	option auto_smart_switch '1'
+	option smart_strategy 'sticky-sessions'
+	option smart_prefer_asn '1'
+	option smart_enable_lgbm '1'
+	option lgbm_auto_update '1'
+	option lgbm_update_interval '72'
+	option lgbm_custom_url 'https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/Model-large.bin'
+	option cachesize_dns '0'
+	option redirect_dns '0'
+	option geoip_custom_url 'https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat'
+	option geoasn_custom_url 'https://fastly.jsdelivr.net/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb'
+	option ipv6_enable '1'
+	option ipv6_mode '3'
+	option ipv6_dns '1'
+	option fakeip_range6 '0'
+	option china_ip6_route '1'
+	option restart '0'
+	option enable_redirect_dns '1'
+	option dler_email 'root'
+	option dler_passwd 'cnhnyl820520'
+	option append_wan_dns '1'
 
 config authentication
 	option enabled '1'
 	option username 'Clash'
 	option password 'rpa8sIEY'
-
 
