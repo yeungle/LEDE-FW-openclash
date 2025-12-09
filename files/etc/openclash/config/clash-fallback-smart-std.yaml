@@ -5,19 +5,9 @@
 # 机场节点订阅
 
 proxy-providers:
-
-  优速通:
-    url: "https://23.158.136.185/api/v1/client/subscribe?token=cb1f5308c036d705fae4cda77a5dc70c"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连  
   
   猫耳云:
-    url: "https://m2dy.whtjdasha.com/api/v1/client/subscribe?token=f25e3beaac57225e91e77bd1b2e1222e"
+    url: "https://m2.shrestart.com/m2?token=1eb92f1b4220a17df7ac72b850aace4a"
     type: http
     interval: 86400
     health-check:
