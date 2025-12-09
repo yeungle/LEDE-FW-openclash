@@ -23,12 +23,12 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
-    - 222.246.129.80
-    - 59.51.78.210
+    - 211.142.210.100
+    - 211.142.210.98
   upstream_dns_file: ""
   bootstrap_dns:
-    - 222.246.129.80
-    - 59.51.78.210
+    - 211.142.210.100
+    - 211.142.210.98
   fallback_dns: []
   upstream_mode: parallel
   fastest_timeout: 1s
