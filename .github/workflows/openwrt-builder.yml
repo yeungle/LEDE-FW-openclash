@@ -35,6 +35,8 @@ jobs:
     steps:
     - name: 加载项目文件
       uses: actions/checkout@main
+      with:
+        fetch-depth: 0
     
     - name: 释放磁盘空间
       uses: danshui-git/free-disk-space@main
