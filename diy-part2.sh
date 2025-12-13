@@ -31,6 +31,9 @@ cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
+cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
+cp -rf kenzok8-packages/oaf package/oaf
+cp -rf kenzok8-packages/open-app-filter package/open-app-filter
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
