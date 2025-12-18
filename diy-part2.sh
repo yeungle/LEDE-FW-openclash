@@ -35,8 +35,6 @@ rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
 
-git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter 
-
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
 #./scripts/feeds update -a
