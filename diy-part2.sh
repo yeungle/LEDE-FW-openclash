@@ -33,13 +33,15 @@ cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 rm -rf kenzok8-packages
 
-git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
+cp -rf OpenClash-packages/luci-app-openclash package/luci-app-openclash
+rm -rf OpenClash-packages
 
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git OpenAppFilter
 cp -rf OpenAppFilter/luci-app-oaf package/luci-app-oaf
 cp -rf OpenAppFilter/oaf package/oaf
 cp -rf OpenAppFilter/open-app-filter package/open-app-filter
-rm -rf kenzok8-packages
+rm -rf OpenAppFilter
 
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
