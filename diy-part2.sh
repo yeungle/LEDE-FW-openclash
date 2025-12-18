@@ -31,14 +31,15 @@ cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
-cp -rf kenzok8-packages/oaf package/oaf
-cp -rf kenzok8-packages/open-app-filter package/open-app-filter
-cp -rf kenzok8-packages/luci-app-oaf package/luci-app-oaf
-
-
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git package/OpenClash
+
+git clone --depth=1 https://github.com/destan19/OpenAppFilter.git OpenAppFilter
+cp -rf OpenAppFilter/luci-app-oaf package/luci-app-oaf
+cp -rf OpenAppFilter/oaf package/oaf
+cp -rf OpenAppFilter/open-app-filter package/open-app-filter
+rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
