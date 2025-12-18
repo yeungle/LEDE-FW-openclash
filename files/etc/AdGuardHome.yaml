@@ -6,7 +6,7 @@ http:
   session_ttl: 720h
 users:
   - name: root
-    password: $2a$10$7kl6VGG2375.Z9zvKHpL/.JWIObOIez/5mM4Vvb9j3tpbbTjTRY6S
+    password: $2a$10$xJ.1yqXLS0641V0Au5ilq.VtmZxknQS6tbBsNHnTPwKjNJL0eaxn2
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
@@ -40,10 +40,13 @@ dns:
   trusted_proxies:
     - 127.0.0.0/8
     - ::1/128
-  cache_size: 0
-  cache_ttl_min: 0
-  cache_ttl_max: 0
-  cache_optimistic: false
+  cache_enabled: true
+  cache_size: 16777216
+  cache_ttl_min: 300
+  cache_ttl_max: 3600
+  cache_optimistic: true
+  cache_optimistic_answer_ttl: 30s
+  cache_optimistic_max_age: 12h
   bogus_nxdomain: []
   aaaa_disabled: false
   enable_dnssec: false
@@ -107,43 +110,41 @@ filters:
   - enabled: true
     url: https://anti-ad.net/easylist.txt
     name: anti-AD Filters
-    id: 1712671055
+    id: 1765811053
   - enabled: true
     url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
     name: CJX's Annoyance List
-    id: 1712671056
+    id: 1765811054
   - enabled: true
     url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-ublock.txt
     name: CJX's uBlock list
-    id: 1712671057
+    id: 1765811728
   - enabled: true
     url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
     name: EasyPrivacy
-    id: 1712671058
+    id: 1765811729
   - enabled: true
     url: https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt
     name: ABP filters
-    id: 1712671059
+    id: 1765811730
   - enabled: true
     url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt
     name: 乘风 广告过滤规则
-    id: 1712671060
+    id: 1765811731
   - enabled: true
     url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/mv.txt
     name: 乘风 视频广告过滤规则
-    id: 1712671061
+    id: 1765811732
   - enabled: true
     url: https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/minority-mv.txt
     name: 乘风 小众视频过滤规则
-    id: 1712671062
+    id: 1765811733
   - enabled: true
     url: https://www.i-dont-care-about-cookies.eu/abp/
     name: I don't care about cookies
-    id: 1712671063
+    id: 1765811734
 whitelist_filters: []
-user_rules:
-  - '@@||analytics.winbaoxian.com^$important'
-  - '@@||mini.eastday.com^$important'
+user_rules: []
 dhcp:
   enabled: false
   interface_name: ""
@@ -183,7 +184,7 @@ filtering:
   safebrowsing_block_host: standard-block.dns.adguard.com
   rewrites: []
   safe_fs_patterns:
-    - /etc/AdGuardHome/data/userfilters/*
+    - /etc/AdGuardHome/userfilters/*
   safebrowsing_cache_size: 1048576
   safesearch_cache_size: 1048576
   parental_cache_size: 1048576
@@ -191,6 +192,7 @@ filtering:
   filters_update_interval: 24
   blocked_response_ttl: 10
   filtering_enabled: true
+  rewrites_enabled: true
   parental_enabled: false
   safebrowsing_enabled: false
   protection_enabled: true
@@ -215,4 +217,4 @@ os:
   group: ""
   user: ""
   rlimit_nofile: 0
-schema_version: 29
+schema_version: 32
