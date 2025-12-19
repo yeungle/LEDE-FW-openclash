@@ -50,7 +50,7 @@ cp -rf istore/luci/luci-app-store package/luci-app-store
 cp -rf istore/luci/luci-lib-taskd package/luci-lib-taskd
 cp -rf istore/luci/luci-lib-xterm package/luci-lib-xterm
 cp -rf istore/luci/taskd package/taskd
-
+rm -rf istore
 
 #./scripts/feeds update -a
 #./scripts/feeds install -a
