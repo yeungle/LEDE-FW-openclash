@@ -45,5 +45,7 @@ rm -rf OpenAppFilter
 
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
+git clone --depth=1 https://github.com/linkease/istore istore
+cp -rf OpenAppFilter/luci-app-oaf package/luci-app-oaf
 #./scripts/feeds update -a
 #./scripts/feeds install -a
