@@ -52,5 +52,13 @@ cp -rf istore/luci/luci-lib-xterm package/luci-lib-xterm
 cp -rf istore/luci/taskd package/taskd
 rm -rf istore
 
+git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
+cp -rf nas-packages/network/services/quickstart package/quickstart
+rm -rf nas-packages
+
+git clone --depth=1 https://github.com/linkease/nas-packages-luci.git nas-packages-luci
+cp -rf nas-packages-luci/luci/luci-app-quickstart package/luci-app-quickstart
+rm -rf nas-packages-luci
+
 #./scripts/feeds update -a
 #./scripts/feeds install -a
