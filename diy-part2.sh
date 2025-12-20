@@ -72,7 +72,7 @@ cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
 cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
-git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk/op-homebox.git op-homebox
+git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk/tree/master/op-homebox.git op-homebox
 cp -rf op-homebox/homebox package/homebox
 cp -rf op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf op-homebox
