@@ -58,7 +58,6 @@ cp -rf nas-packages/network/services/quickstart package/quickstart
 cp -rf nas-packages/network/services/floatip package/floatip
 cp -rf nas-packages/network/services/linkease package/linkease
 cp -rf nas-packages/network/services/ddnsto package/ddnsto
-
 rm -rf nas-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages-luci.git nas-packages-luci
