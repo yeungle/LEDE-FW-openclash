@@ -25,6 +25,16 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 180
     proxy: 直连
+
+  多宝:
+    url: "https://dbsub2.whtjdasha.com/s/b6e58d7f302e22f2f56a70cd2fe3c946"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连
  
 proxies:
   - {name: 直连, type: direct}
