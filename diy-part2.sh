@@ -71,5 +71,9 @@ cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
 cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
+git clone --depth=1 https://github.com/jjm2473/openwrt-apps.git openwrt-apps
+cp -rf openwrt-apps/homebox package/homebox
+cp -rf openwrt-apps/luci-app-homebox package/luci-app-homebox
+rm -rf openwrt-apps
 #./scripts/feeds update -a
 #./scripts/feeds install -a
