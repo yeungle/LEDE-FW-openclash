@@ -28,8 +28,6 @@ rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/luci/applications/luci-app-openclash
 
 git clone --depth=1 https://github.com/kenzok8/small-package.git kenzok8-packages
-cp -rf kenzok8-packages/ddnsto package/ddnsto
-cp -rf kenzok8-packages/luci-app-ddnsto package/luci-app-ddnsto
 cp -rf kenzok8-packages/wrtbwmon package/wrtbwmon
 cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
@@ -57,10 +55,17 @@ rm -rf istore
 
 git clone --depth=1 https://github.com/linkease/nas-packages.git nas-packages
 cp -rf nas-packages/network/services/quickstart package/quickstart
+cp -rf nas-packages/network/services/floatip package/floatip
+cp -rf nas-packages/network/services/linkease package/linkease
+cp -rf nas-packages/network/services/ddnsto package/ddnsto
+
 rm -rf nas-packages
 
 git clone --depth=1 https://github.com/linkease/nas-packages-luci.git nas-packages-luci
 cp -rf nas-packages-luci/luci/luci-app-quickstart package/luci-app-quickstart
+cp -rf nas-packages-luci/luci/luci-app-floatip package/luci-app-floatip
+cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
+cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
 #./scripts/feeds update -a
