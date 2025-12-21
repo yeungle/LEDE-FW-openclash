@@ -78,5 +78,7 @@ git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk.git extra-ipk
 #cp -rf extra-ipk/op-homebox/homebox package/homebox
 cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf extra-ipk
+
+git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
 #./scripts/feeds update -a
 #./scripts/feeds install -a
