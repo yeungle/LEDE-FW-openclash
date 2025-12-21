@@ -37,6 +37,7 @@ cp -rf kenzok8-packages/luci-app-netspeedtest package/luci-app-netspeedtest
 cp -rf kenzok8-packages/netspeedtest package/netspeedtest
 cp -rf kenzok8-packages/speedtest-cli package/speedtest-cli
 cp -rf kenzok8-packages/homebox package/homebox
+cp -rf kenzok8-packages/luci-app-autotimeset package/luci-app-autotimeset
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
