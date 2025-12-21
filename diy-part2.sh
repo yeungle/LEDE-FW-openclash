@@ -36,6 +36,7 @@ cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
 cp -rf kenzok8-packages/luci-app-netspeedtest package/luci-app-netspeedtest
 cp -rf kenzok8-packages/netspeedtest package/netspeedtest
 cp -rf kenzok8-packages/speedtest-cli package/speedtest-cli
+cp -rf kenzok8-packages/homebox package/homebox
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
@@ -73,7 +74,7 @@ cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
 git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk.git extra-ipk
-cp -rf extra-ipk/op-homebox/homebox package/homebox
+#cp -rf extra-ipk/op-homebox/homebox package/homebox
 cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf extra-ipk
 #./scripts/feeds update -a
