@@ -49,7 +49,7 @@ cp -rf OpenAppFilter/open-app-filter package/open-app-filter
 rm -rf OpenAppFilter
 
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone -b js https://github.com/papagaye744/luci-theme-design package/luci-theme-design
+git clone --depth=1 -b js https://github.com/papagaye744/luci-theme-design package/luci-theme-design
 
 git clone --depth=1 https://github.com/linkease/istore istore
 cp -rf istore/luci/luci-app-store package/luci-app-store
