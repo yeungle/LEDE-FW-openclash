@@ -23,6 +23,7 @@
 sed -i "s/^VERSION_NUMBER:=.*/VERSION_NUMBER:=25.12-$(date +%Y%m%d)/" include/version.mk
 
 rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-design
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/luci/applications/luci-app-openclash
