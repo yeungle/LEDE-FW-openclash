@@ -86,7 +86,7 @@ cp -rf kenzok8-packages/homebox package/homebox
 cp -rf kenzok8-packages/luci-app-netspeedtest package/luci-app-netspeedtest
 cp -rf kenzok8-packages/netspeedtest package/netspeedtest
 cp -rf kenzok8-packages/speedtest-cli package/speedtest-cli
-rm -rf netspeedtest
+rm -rf kenzok8-packages
 
 #./scripts/feeds update -a
 #./scripts/feeds install -a
