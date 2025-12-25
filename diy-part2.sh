@@ -75,10 +75,18 @@ cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
 git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk.git extra-ipk
-cp -rf extra-ipk/op-homebox/homebox package/homebox
+#cp -rf extra-ipk/op-homebox/homebox package/homebox
 cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf extra-ipk
 
 git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
+
+git clone --depth=1 https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
+cp -rf netspeedtest/homebox package/homebox
+cp -rf netspeedtest/luci-app-netspeedtest package/luci-app-netspeedtest
+cp -rf netspeedtest/netspeedtest package/netspeedtest
+cp -rf netspeedtest/speedtest-cli package/speedtest-cli
+rm -rf netspeedtest
+
 #./scripts/feeds update -a
 #./scripts/feeds install -a
