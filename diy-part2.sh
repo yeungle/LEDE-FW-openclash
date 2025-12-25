@@ -81,7 +81,7 @@ rm -rf extra-ipk
 
 git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
 
-#git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest netspeedtest
+#git clone --depth=1 https://github.com/sirpdboy/luci-app-netspeedtest.git netspeedtest
 #cp -rf kenzok8-packages/homebox package/homebox
 #cp -rf kenzok8-packages/luci-app-netspeedtest package/luci-app-netspeedtest
 #cp -rf kenzok8-packages/netspeedtest package/netspeedtest
