@@ -8,6 +8,10 @@ docker run -d --name AdGuard-Home1 -v /opt/docker/AGH_Docker1:/opt/adguardhome/w
 1，openclash上传到：/etc/openclash
 
 ZashBoard 配置导入：https://gh-proxy.com/raw.githubusercontent.com/liandu2024/little/refs/heads/main/zashboard/zashboard-20250417.json
+
+
+
+
 git clone https://github.com/coolsnowwolf/lede
 cd lede
 ./scripts/feeds update -a
