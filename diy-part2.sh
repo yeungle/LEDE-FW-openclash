@@ -34,9 +34,9 @@ cp -rf kenzok8-packages/luci-app-wrtbwmon package/luci-app-wrtbwmon
 cp -rf kenzok8-packages/adguardhome package/adguardhome
 cp -rf kenzok8-packages/luci-app-adguardhome package/luci-app-adguardhome
 cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
-cp -rf kenzok8-packages/luci-app-systools package/luci-app-systools
-cp -rf kenzok8-packages/luci-lib-iform package/luci-lib-iform
-cp -rf kenzok8-packages/speedtestcli package/speedtestcli
+#cp -rf kenzok8-packages/luci-app-systools package/luci-app-systools
+#cp -rf kenzok8-packages/luci-lib-iform package/luci-lib-iform
+#cp -rf kenzok8-packages/speedtestcli package/speedtestcli
 cp -rf kenzok8-packages/homebox package/homebox
 cp -rf kenzok8-packages/luci-app-netspeedtest package/luci-app-netspeedtest
 cp -rf kenzok8-packages/netspeedtest package/netspeedtest
@@ -78,9 +78,9 @@ cp -rf nas-packages-luci/luci/luci-app-linkease package/luci-app-linkease
 cp -rf nas-packages-luci/luci/luci-app-ddnsto package/luci-app-ddnsto
 rm -rf nas-packages-luci
 
-git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk.git extra-ipk
+#git clone --depth=1 https://github.com/xiangfeidexiaohuo/extra-ipk.git extra-ipk
 #cp -rf extra-ipk/op-homebox/homebox package/homebox
-cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
+#cp -rf extra-ipk/op-homebox/luci-app-homebox package/luci-app-homebox
 rm -rf extra-ipk
 
 git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/luci-app-autotimeset
