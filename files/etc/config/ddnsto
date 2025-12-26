@@ -5,4 +5,5 @@ config ddnsto
 	option index '0'
 	option enabled '1'
 	option token 'fff37dd6-0ccb-4c72-befa-8f5b724e4c18'
+	option address 'https://opthost.ddnsto.com:443'
 
