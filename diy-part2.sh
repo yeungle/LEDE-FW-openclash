@@ -87,6 +87,6 @@ git clone --depth=1 https://github.com/jjm2473/luci-app-autotimeset.git package/
 #cp -rf kenzok8-packages/netspeedtest package/netspeedtest
 #cp -rf kenzok8-packages/speedtest-cli package/speedtest-cli
 #rm -rf kenzok8-packages
-
+git clone https://github.com/sirpdboy/luci-app-netspeedtest.git package/netspeedtest
 #./scripts/feeds update -a
 #./scripts/feeds install -a
