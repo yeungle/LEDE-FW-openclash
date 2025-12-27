@@ -129,6 +129,3 @@ config rule 'rule'
 	list app_list '2134'
 	list app_list '2135'
 	list app_list '2136'
-	list app_list '3200'
-	list app_list '3014'
-
