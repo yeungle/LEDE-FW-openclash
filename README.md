@@ -13,7 +13,11 @@ ZashBoard 配置导入：https://gh-proxy.com/raw.githubusercontent.com/liandu20
 
 
 git clone https://github.com/coolsnowwolf/lede
+
 cd lede
+
 ./scripts/feeds update -a
+
 ./scripts/feeds install -a
+
 make menuconfig
