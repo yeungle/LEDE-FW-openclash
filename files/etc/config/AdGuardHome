@@ -1,4 +1,19 @@
-config adguardhome config
-	option enabled '0'
-	# Where to store persistent data by AdGuard Home
-	option workdir /var/adguardhome
+
+config AdGuardHome 'AdGuardHome'
+	option httpport '3000'
+	option configpath '/etc/AdGuardHome.yaml'
+	option workdir '/etc/AdGuardHome'
+	option logfile '/tmp/AdGuardHome.log'
+	option verbose '0'
+	option binpath '/usr/bin/AdGuardHome'
+	option hostsmd5 '5504bb04bd01cb0e340aee9e2ae065b2'
+	option version 'v0.107.71
+'
+	option binmtime '1766848622'
+	option enabled '1'
+	option redirect 'exchange'
+	option waitonboot '1'
+	option ucitracktest '2'
+	list old_redirect 'exchange'
+	list old_port '1745'
+	list old_enabled '1'
