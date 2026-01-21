@@ -17,7 +17,7 @@ proxy-providers:
     proxy: 直连
 
   牛逼:
-    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=0e1f7cfe54b869fa5739cc9475d7a775"
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=1de8b08dab1461ab395d197e9c12c1b2"
     type: http
     interval: 86400
     health-check:
