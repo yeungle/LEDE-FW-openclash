@@ -37,6 +37,8 @@ cp -rf kenzok8-packages/luci-app-eqos package/luci-app-eqos
 cp -rf kenzok8-packages/luci-app-systools package/luci-app-systools
 cp -rf kenzok8-packages/luci-lib-iform package/luci-lib-iform
 cp -rf kenzok8-packages/speedtestcli package/speedtestcli
+cp -rf kenzok8-packages/fastnet package/fastnet
+cp -rf kenzok8-packages/luci-app-fastnet package/luci-app-fastnet
 rm -rf kenzok8-packages
 
 git clone --depth=1 https://github.com/vernesong/OpenClash.git OpenClash-packages
