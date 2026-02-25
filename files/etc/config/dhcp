@@ -19,7 +19,7 @@ config dnsmasq
 
 config dhcp 'lan'
 	option interface 'lan'
-	option start '10'
+	option start '100'
 	option limit '50'
 	option leasetime '12h'
 	option dhcpv4 'server'
@@ -27,7 +27,7 @@ config dhcp 'lan'
 	option ra 'server'
 	list ra_flags 'managed-config'
 	list ra_flags 'other-config'
-	list dhcp_option '6,10.0.1.1'
+	list dhcp_option '6,192.168.88.1'
 
 config dhcp 'wan'
 	option interface 'wan'
@@ -44,12 +44,12 @@ config host
 	option dns '1'
 	option leasetime '12h'
 	list mac 'E8:9F:80:45:25:28'
-	option ip '10.0.1.10'
+	option ip '192.168.88.100'
 
 config host
 	option name 'DS918'
 	option dns '1'
 	option mac '00:11:32:82:68:b7'
-	option ip '10.0.1.11'
+	option ip '192.168.88.101'
 	option leasetime '12h'
 
