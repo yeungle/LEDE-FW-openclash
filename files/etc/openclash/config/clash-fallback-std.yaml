@@ -1,3 +1,4 @@
+
 # ========================
 # Clash-ALL 优化配置
 # ========================
@@ -6,34 +7,32 @@
 
 proxy-providers:
   
-  猫耳云:
-    url: "https://m2.shrestart.com/m2?token=1eb92f1b4220a17df7ac72b850aace4a"
+  亚马逊云:
+    url: "http://18.163.126.8:2096/sub/8HiOLCPo"
     type: http
     interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 180}
     proxy: 直连
 
-  牛逼:
-    url: "https://zhuzhuzhu.whtjdasha.com/dazhutou/1de8b08dab1461ab395d197e9c12c1b2"
+  谷歌云:
+    url: "http://35.212.146.1:2096/sub/RBpdj98Q"
     type: http
     interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 180}
     proxy: 直连
 
-  多宝:
-    url: "https://dbsub2.whtjdasha.com/s/b6e58d7f302e22f2f56a70cd2fe3c946"
+  甲骨文云（美国）:
+    url: "http://129.153.121.208:2096/sub/4LundefinedltwMQ"
     type: http
     interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 180}
+    proxy: 直连
+
+  甲骨文云（新加坡）:
+    url: "http://168.138.161.56:2096/sub/oetgyzundefinedV"
+    type: http
+    interval: 86400
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 180}
     proxy: 直连
  
 proxies:
@@ -117,7 +116,7 @@ dns:
     - "*.cecchina.com"
     - "*.plaso.com" 
 
-ipv6: false
+ipv6: true
 
 # ========================
 # TUN 模块
@@ -147,11 +146,8 @@ default: &default
     - 所有-手动
     - 香港-自动
     - 香港-故转
-    - 台湾-故转
-    - 日本-故转
     - 新加坡-故转
     - 美国-故转
-    - 其他-故转
     - 拒绝
 
 proxy-groups:
@@ -209,46 +205,6 @@ proxy-groups:
     interval: 180
     filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"
  
-  # 台湾组
-
-  - name: 台湾-故转
-    type: fallback
-    interval: 180
-    lazy: false
-    proxies:
-      - 台湾-手动
-      - 台湾-自动
-  - name: 台湾-手动
-    type: select
-    include-all: true
-    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
-  - name: 台湾-自动
-    type: url-test
-    include-all: true
-    tolerance: 50
-    interval: 180
-    filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"
-
-  # 日本组
-
-  - name: 日本-故转
-    type: fallback
-    interval: 180
-    lazy: false
-    proxies:
-      - 日本-手动
-      - 日本-自动
-  - name: 日本-手动
-    type: select
-    include-all: true
-    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
-  - name: 日本-自动
-    type: url-test
-    include-all: true
-    tolerance: 50
-    interval: 180
-    filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"
-
   # 新加坡组
 
   - name: 新加坡-故转
@@ -288,28 +244,6 @@ proxy-groups:
     tolerance: 50
     interval: 180
     filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"
-
-
-  # 其他组
-  
-  - name: 其他-故转
-    type: fallback
-    interval: 180
-    lazy: false
-    proxies:
-      - 其他-手动
-      - 其他-自动
-  - name: 其他-手动
-    type: select
-    include-all: true
-    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|订阅|到期|流量|官网|邀请码|过滤|显示|客户端|网站|教程|更新|防失联|群|距离)).)*$"
-
-  - name: 其他-自动
-    type: url-test
-    include-all: true
-    tolerance: 50
-    interval: 180
-    filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|订阅|到期|流量|官网|邀请码|过滤|显示|客户端|网站|教程|更新|防失联|群|距离)).)*$"
 
 # 规则引擎（rules）
 rules:
